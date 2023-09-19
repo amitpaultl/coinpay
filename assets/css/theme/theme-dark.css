@@ -1,0 +1,493 @@
+/* Theme Dark */
+/*--------------------------------
+    2.1 Theme Color
+-----------------------------------*/
+:root {
+
+    /* Light Color */
+    --white-color: #fff;
+
+    /* Base Color */
+    --primary-color: #304FFE;
+    --secondary-color: #FDD835;
+    --error-color: #F44336;
+    --success-color: #43A048;
+    --warning-color: #FB8A00;
+
+    /* Content Color */
+    --content-primary:#2A2A2A;
+    --content-primary-dark:#F7F7F7;
+
+    --content-secondary:#414141;
+    --content-secondary-dark:#E8E8E8;
+
+    --content-tertiary:#5A5A5A;
+    --content-tertiary-dark:#D0D0D0;
+
+    --content-disabled:#B8B8B8;
+    --content-disabled-dark:#717171;
+
+    --content-accent:#1E3AE5;
+    --content-accent-dark:#A4ABFF;
+
+    --content-secondary-color:#F57F17;
+    --content-error: #B71B1C;
+    --content-error-dark: #FFCDD2;
+    --content-success: #1B5E21;
+    --content-success-dark: #C8E6C9;
+    --content-warning: #983301;
+    --content-on-inverse: #983301;
+    --content-on-color: #FFFFFF;
+
+    /* Background Color */
+    --bg-light:#FFFFFF;
+    --bg-dark:#121212;
+
+    --bg-inverse:#121212;
+    --bg-accent:#304FFE;
+    --bg-secondary:#FDD835;
+    --bg-error:#F44336;
+    --bg-success:#43A048;
+    --bg-success:#43A048;
+    --bg-accent-light:#EAEBFF;
+    --bg-secondary-light: #FFF9C4;
+    --bg-error-light: #FFEBEE;
+    --bg-error-dark: #65241F;
+
+    --bg-success-light: #E8F5E9;
+    --bg-success-dark: #274C29;
+
+    --bg-warning-light: #FFF3E0;
+
+    /* Border */
+    --border:#D0D0D0;
+    --border-dark:#898989;
+
+    --border-accent:#576CFF;
+    --border-error:#F44336;
+    --border-success:#66BB6B;
+    --border-warning:#FFA525;
+
+    --divider:#E8E8E8;
+    --divider-dark:#5A5A5A;
+
+    --divider-accent:#C9CCFF;
+    --divider-error:#FFCDD2;
+    --divider-success:#C8E6C9;
+    --divider-warning:#FFF3E0;
+
+    /* Neutral */
+    --gray200: #D0D0D0;
+    --gray50: #F7F7F7;
+    --gray600: #717171;
+    --gray700: #5A5A5A;
+    --gray800: #414141;
+    --gray900: #2A2A2A;
+    --gray100:#E8E8E8;
+
+    /* Light Color */
+
+    /* Dark Color Start */
+    --content-secondary-dark: #E8E8E8;
+    --content-primary-dark: #F7F7F7;
+
+    --bg-inverse-dark: #FFFFFF;
+
+
+    /* Dark Color End */
+
+    /* Font Family */
+    --body-font-family: 'Poppins', sans-serif;
+}
+
+
+body.dark .color-heading {
+  color: var(--heading-color-dark);
+}
+.color-hover {
+    color: var(--primary-hover-color);
+}
+.primary-color {
+    color: var(--primary-color)!important;
+}
+.primary-color:hover {
+    color: var(--primary-hover-color)!important;
+}
+.secondary-color {
+    color: var(--secondary-color);
+}
+.theme-text-color {
+    color: var(--body-font-color);
+}
+.bg-primary-color {
+    background-color: var(--primary-color);
+}
+.bg-light {
+    background-color: var(--gray50)!important;
+}
+.bg-gradient {
+    background-image: var(--bg-gradient)!important;
+}
+
+.theme-border {
+    border: 1px solid var(--border-color);
+}
+.border-bottom {
+    border-bottom: 1px solid var(--border-color)!important;
+}
+.border-top {
+    border-top: 1px solid var(--border-color)!important;
+}
+
+.color-error {
+    color: var(--content-error);
+}
+
+.orange-color {
+    color: var(--content-secondary-color);
+}
+.green-color {
+    color: var(--content-success);
+}
+.red-color, .theme-link-red {
+    color: var(--red-color);
+}
+.red-color:hover, .theme-link-red:hover {
+    color: var(--red-color-hover)!important;
+}
+button.red-color:hover, a.red-color:hover, .theme-link-red:hover {
+    color: var(--red-color-hover);
+}
+.bg-orange {
+    background-color: var(--orange-color);
+}
+
+.bg-green {
+    background-color: var(--green-color);
+}
+.bg-red {
+    background-color: var(--red-color);
+}
+
+.bg-red-transparent {
+    background-color: rgba(255, 67, 67, 0.1);
+}
+.bg-green-transparent {
+    background-color: var(--bg-success-light);
+}
+.bg-blue-transparent {
+    background-color: var(--bg-accent-light);
+}
+.bg-purple-transparent {
+    background-color: #F0EBFF;
+}
+.bg-yellow-transparent {
+    background-color: var(--bg-secondary-light);
+}
+.bg-orange-transparent {
+    background-color: var(--bg-warning-light);
+}
+.bg-gray-transparent {
+    background-color: var(--content-disabled);
+}
+
+.sidebar-badge-light {
+    background-color: #EEEEEE;
+    color: var(--body-font-color);
+}
+.theme-link {
+    color: var(--primary-color);
+}
+.theme-link:hover {
+    color: var(--primary-hover-color)!important;
+}
+.theme-secondary-link {
+    color: var(--secondary-color);
+}
+.theme-secondary-link:hover {
+    color: var(--secondary-hover-color)!important;
+}
+
+/*--------------------------------
+  2.1 Theme Color
+-----------------------------------*/
+body.dark {
+  background: var(--bg-dark) none repeat scroll;
+}
+
+body.dark .dropdown-divider {
+  border-top: 1px solid var(--border-color-dark)!important;
+}
+
+body.dark .bg-white,
+body.dark .navbar .dropdown-menu {
+  background: var(--bg-secondary-dark)!important;
+}
+
+body.dark .modal-content {
+  background: var(--gray900)!important;
+}
+.modal-backdrop {
+    background-color: rgba(18, 18, 18, .57);
+}
+
+body.dark .color-heading,
+body.dark .theme-btn, body.dark .green-btn, body.dark .theme-btn-2, body.dark .theme-btn-red,
+body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6,
+body.dark .accordion-button,
+body.dark .header-item {
+  color: var(--content-primary-dark);
+}
+
+body.dark .form-control::placeholder {
+  color: var(--border-dark);
+}
+body.dark .form-control, body.dark .form-select {
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-dark);
+  color: var(--content-secondary-dark);
+}
+body.dark .form-control:focus, body.dark.form-select:focus {
+  border-color: #86b7fe;
+  color: var(--content-secondary-dark);
+}
+body.dark .input-group-text .iconify {
+  color: var(--body-font-color);
+}
+
+/* Navbar */
+
+/* Navbar */
+
+/* Template Page Dark Version CSS End */
+
+/* New Dark */
+body.dark .page-progress-option {
+    background-color: var(--gray900);
+}
+body.dark .page-back-btn {
+    color: var(--content-primary-dark);
+}
+body.dark .page-back-btn:hover {
+    color: var(--content-primary-dark)!important;
+}
+
+body.dark .theme-link {
+    color: var(--content-accent-dark);
+}
+body.dark p {
+    color: var(--content-tertiary-dark);
+}
+
+body.dark .signup-step-top-part p {
+  color: var(--content-tertiary-dark);
+}
+
+body.dark .otp-form .otp-field {
+    border-bottom: 1px solid var(--content-disabled-dark);
+    background: transparent;
+    color: var(--divider-accent);
+}
+body.dark .otp-form .otp-field:focus {
+    border-bottom-color: var(--divider-accent);
+}
+/* body.dark .bootstrap-select .dropdown-menu .inner.show { */
+body.dark .bootstrap-select .dropdown-menu.show {
+    background-color: var(--gray900);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.12);
+}
+body.dark .bootstrap-select .bs-ok-default:after {
+    color: var(--content-secondary-dark);
+}
+body.dark .filter-option-inner-inner, body.dark .select-option-item-title {
+  color: var(--content-secondary-dark);
+}
+body.dark .my-custom-select-box button.btn.dropdown-toggle {
+    border: 1px solid var(--content-disabled-dark);
+}
+body.dark .m-datepicker, body.dark .m-datepicker-body, body.dark .m-datepicker-footer {
+    background-color: var(--gray900);
+}
+body.dark .m-datepicker-days p {
+    color: var(--content-secondary-dark)!important;
+}
+body.dark .m-datepicker-month-status, body.dark .m-datepicker-year-status, body.dark .m-datepicker-weeks p {
+    color: var(--content-secondary-dark)!important;
+}
+body.dark .page-progress-option-shadow-right {
+    background-color: var(--gray900);
+}
+body.dark .verification-list-item-number {
+    background: var(--gray900);
+    color: var(--content-primary-dark);
+}
+body.dark .verification-list-item-title {
+  color: var(--content-tertiary-dark);
+}
+body.dark .spinner-inner-bg {
+    background-color: var(--bg-inverse);
+}
+body.dark .account-verification-list .verification-list-item:not(:last-child) {
+    border-bottom: 1px solid var(--divider-dark);
+}
+body.dark #fields .numberfield.active span {
+    background-color: var(--content-primary-dark);
+}
+
+/* Calculator css */
+body.dark #numbers {
+    background-color: var(--gray900)!important;
+}
+body.dark #pincode button {
+    color: var(--content-primary-dark);
+    background: var(--gray800);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+/* Calculator css */
+
+body.dark .bg-light {
+    background-color: var(--bg-dark)!important;
+}
+body.dark button:disabled, body.dark button:disabled:hover,
+body.dark a:disabled, body.dark a:disabled:hover,
+body.dark a.disabled, body.dark a.disabled:hover {
+    background-color: var(--content-disabled-dark)!important;
+    color: var(--content-tertiary-dark)!important;
+}
+
+body.dark .form-group-card-number {
+  background-color: var(--bg-dark)!important;
+  border-color: var(--content-disabled-dark)!important;
+}
+body.dark .card-number-field, body.dark .mm-yy-field, body.dark .cvv-field {
+  border-color: transparent;
+}
+body.dark .card-number-field:focus, body.dark .mm-yy-field:focus, body.dark .cvv-field:focus {
+  border-color: transparent;
+}
+body.dark .single-card-item {
+    background-color: var(--gray900);
+    color: var(--content-tertiary-dark);
+}
+body.dark .flash-message-box {
+    background-color: var(--bg-success-dark);
+    color: var(--content-success-dark);
+}
+body.dark .flash-message-icon {
+    background-color: var(--content-success-dark);
+    color: var(--bg-success-dark);
+}
+body.dark .card-list-old .single-card-item-right {
+    color: var(--content-error-dark);
+    background: var(--bg-error-dark);
+}
+body.dark .send-request-bank-area {
+    background: var(--gray900);
+}
+body.dark .send-request-bank-area .send-request-bank-item:not(:last-child):after {
+    background-color: var(--divider-dark);
+}
+body.dark .transaction-item-wrap .transaction-item:not(:last-child) {
+    border-bottom: 1px solid var(--divider-dark);
+}
+body.dark .transaction-item {
+  color: var(--content-secondary-dark);
+}
+body.dark .home-bottom-menu-wrap {
+    background-color: var(--gray900);
+}
+body.dark .home-bottom-menu-item {
+    color: var(--content-secondary-dark);
+}
+body.dark .home-bottom-menu-item.active {
+    color: var(--primary-color);
+}
+body.dark .choose-recipient-area , body.dark .recipient-search-result-box {
+    background-color: var(--gray900);
+}
+body.dark .recipient-search-list .recipient-search-item:not(:last-child) {
+    border-bottom: 1px solid var(--divider-dark);
+}
+body.dark .choose-recipient-search .form-group-with-icon .form-control {
+    background-color: var(--gray800);
+}
+body.dark .color-error {
+    color: var(--bg-error);
+}
+body.dark .recipient-name {
+    color: var(--content-secondary-dark);
+}
+body.dark .recipient-email {
+    color: var(--content-tertiary-dark);
+}
+body.dark .select-purpose-user-box {
+    background-color: var(--gray900);
+}
+body.dark .select-purpose-user-box .home-top-area-content-title {
+    background-color: transparent!important;
+}
+body.dark label.custom-radiobox .custom-radiobox-content {
+    background-color: var(--gray900);
+}
+body.dark label.custom-radiobox .custom-radiobox-content:before {
+    box-shadow: inset 0 0 0 0.1em var(--gray600);
+}
+body.dark .receive-qr-code-page-content {
+    background-color: var(--gray900);
+}
+body.dark .spending-month-select-box .form-select {
+    background-color: var(--gray800);
+    border-color: transparent;
+}
+body.dark .available-balance-item p {
+  color: var(--content-secondary);
+}
+body.dark .total-spend-item p {
+  color: var(--content-secondary-dark);
+}
+body.dark .chart-box-area, body.dark .spending-nav-tabs {
+    background-color: var(--gray900);
+}
+body.dark .spending-nav-tabs .nav-item.show .nav-link, body.dark .spending-nav-tabs .nav-link.active {
+    background-color: transparent;
+}
+body.dark .spending-nav-link-title {
+    color: var(--content-secondary-dark);
+}
+body.dark .spending-nav-tabs .nav-item.show .nav-link .spending-nav-link-title,
+body.dark .spending-nav-tabs .nav-link.active .spending-nav-link-title {
+    color: var(--content-accent-dark);
+}
+body.dark .spending-list-item .transaction-item-left .big-para, body.dark .spending-list-item .transaction-item-left .small-para {
+    color: var(--content-secondary-dark);
+}
+body.dark .transaction-item-wrap {
+  background-color: transparent;
+}
+body.dark .profile-menu-item-wrap {
+    background-color: var(--gray900);
+}
+body.dark .profile-menu-title, body.dark .profile-menu-item-right .iconify {
+    color: var(--content-primary-dark);
+}
+body.dark .profile-menu-item-wrap .profile-menu-item:not(:last-child) {
+    border-bottom: 1px solid var(--divider-dark);
+}
+body.dark .chat-text-box .chat-text {
+    background-color: var(--gray900);
+    color: var(--content-primary-dark);
+}
+body.dark .message-chat-bottom-left .input-group {
+    background-color: var(--gray900);
+    color: var(--content-disabled-dark);
+}
+body.dark .attach-file-box [type=file] + label {
+    color: var(--content-disabled-dark);
+}
+body.dark .conversation-start-date span {
+    color: var(--content-tertiary-dark);
+}
+body.dark .chat-user-name, body.dark .chat-user-sent-timing {
+    color: var(--content-disabled-dark);
+}
+/* New Dark */

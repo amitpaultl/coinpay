@@ -1,0 +1,22 @@
+{
+  "name": "Coinpay Fintech Finance Mobile App UI kit PWA",
+  "short_name": "CoinpayPWA",
+  "lang": "en-US",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "white",
+  "theme_color": "#1E3AE5",
+  "description": "Coinpay Fintech Finance Mobile App UI kit",
+  "icons": [
+    {
+      "src": "assets/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
